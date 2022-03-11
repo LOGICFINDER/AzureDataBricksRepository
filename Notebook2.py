@@ -1,8 +1,12 @@
 # Databricks notebook source
-# Program to generate a random number between 0 and 9
+# Taking kilometers input from the user
+kilometers = float(input("Enter value in kilometers: "))
 
-# importing the random module
-import random
+# conversion factor
+conv_fac = 0.621371
 
-print(random.randint(0,9))
+# calculate miles
+miles = kilometers * conv_fac
+print('%0.2f kilometers is equal to %0.2f miles' %(kilometers,miles))
+
 
